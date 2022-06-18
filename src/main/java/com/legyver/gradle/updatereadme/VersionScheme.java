@@ -15,6 +15,8 @@ public enum VersionScheme {
      */
     SEMVER(new HashMap<>() {
         {
+            //this pattern comes from https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
+            //only the beginning (^) and end ($) markers were removed
             this.put("2.0", "(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?");
         }
     }),
