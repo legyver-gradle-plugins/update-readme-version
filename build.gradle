@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.legyver'
-version '0.1.0'
+version '0.1.1'
 
 dependencies {
     implementation 'org.ow2.asm:asm:8.0.1'
@@ -27,7 +27,7 @@ gradlePlugin {
         updateReadmeVersion {
             id = "com.legyver.update-readme-version"
             displayName = "Update readme version"
-            description  = "Update the library version in your README files based on project version. In effect this auto-updates the standard gradle dependency usage ONLY (not short form, or maven, or grape, etc)"
+            description  = "Update the library version in your README files based on project version. In effect, this auto-updates the standard gradle dependency usage ONLY (not short form, or maven, or grape, etc)"
             implementationClass = "com.legyver.gradle.updatereadme.UpdateReadmeVersionPlugin"
         }
     }

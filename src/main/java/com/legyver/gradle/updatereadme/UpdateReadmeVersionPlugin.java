@@ -70,6 +70,7 @@ public class UpdateReadmeVersionPlugin implements Plugin<Project> {
                                 {
                                     this.put("dir", ".");
                                     this.put("includes", "README.md");
+                                    this.put("casesensitive", false);
                                 }
                             }
                     });
